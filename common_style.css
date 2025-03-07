@@ -1,17 +1,18 @@
 /* Navbar Styling */
 .custom-navbar {
-    background-color: #343a40;
-    padding: 10px 20px;
+    background-color: #6c757d; /* Grey bar */
+    padding: 20px; /* Increased padding for larger text */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .custom-navbar a {
-    color: white;
+    color: white; /* White text */
     text-decoration: none;
     margin: 0 10px;
     font-weight: bold;
+    font-size: 1.2em; /* Larger text */
 }
 
 .custom-navbar a:hover {
@@ -20,24 +21,24 @@
 
 /* Grey Section Styling */
 .custom-grey-section {
-    background-color: #f8f9fa;
+    background-color: #f8f9fa; /* Light grey background */
     padding: 50px;
     text-align: center;
 }
 
 .custom-grey-section h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Decently large heading */
     margin-bottom: 20px;
 }
 
 .custom-grey-section p {
     font-size: 1.2em;
-    color: #6c757d;
+    color: #6c757d; /* Grey text */
 }
 
 .custom-grey-section .btn {
-    background-color: #007bff;
-    color: white;
+    background-color: #007bff; /* Blue button */
+    color: white; /* White text */
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
@@ -51,7 +52,7 @@
 
 /* White Section Container Styling */
 .custom-white-container {
-    background-color: white;
+    background-color: white; /* White background */
     padding: 30px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -59,18 +60,18 @@
 }
 
 .custom-white-container h2 {
-    font-size: 1.8em;
+    font-size: 1.8em; /* Smaller headings */
     margin-bottom: 15px;
 }
 
 .custom-white-container p {
-    color: #6c757d;
+    color: #6c757d; /* Grey text */
     font-size: 1em;
 }
 
 .custom-white-container .btn {
-    background-color: #6c757d;
-    color: white;
+    background-color: #6c757d; /* Grey button */
+    color: white; /* White text */
     padding: 8px 15px;
     text-decoration: none;
     border-radius: 5px;
