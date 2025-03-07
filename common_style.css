@@ -40,12 +40,35 @@ body {
     pointer-events: none;
 }
 
+.dropdown {
+    position: relative;
+}
+
 .dropdown-menu {
     display: none;
     position: absolute;
+    top: 100%;
+    left: 0;
     background-color: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     padding: 10px;
+    list-style: none;
+    width: 150px;
+    z-index: 10;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f8f9fa;
 }
 
 .dropdown:hover .dropdown-menu {
