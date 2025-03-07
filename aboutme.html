@@ -5,6 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
     <link rel="stylesheet" href="common_style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            width: 400x;
+            height: 450px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .bio {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 500px;
+            height: 700px;
+            margin: 5px;
+            border-radius: 10px;
+        }
+        #Siena-Link {
+            color: green;
+            text-decoration: none;
+        }
+        
+        #Siena-Link:hover {
+            color: goldenrod;
+        }
+
+        #Siena-Link:visited {
+            color: gold; 
+        }
+
+        #Siena-Link:visited:hover {
+            color: green; 
+        }
+        
+        
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -29,4 +80,39 @@
             </form>
         </div>
     </nav>
+    <div class="container">
+        <h1>About Me</h1>
+        <img src="aboutmepicture.jpg" alt="Picture of Website Creator Leaning Against a Wall">
+        <p>Hello! I'm Patrick Liszewski, a passionate computer science education student at <a id="Siena-Link" href="https://www.siena.edu/"><strong>Siena College!</strong></a> Welcome to my personal space on the web!</p>
+        <p>Aside from computers, I also enjoy theater and video games, see more about my interests on my <a href="https://patrickliszewski.github.io/CornerOfTheInternet/blog"><strong>blog!</strong></a></p>
+        
+        <div class="bio">
+            <h2>My Background</h2>
+            <p>I was born in New Jersey, raised in New York. Although I was expected to be the athletic kid of the family I somehow drifted towards theater and found a passion there.</p>
+            <p>My love of technology was created early on as a result of the relationship I had with my older sibling, someone from the start of the computer era, where to have a social media presence you had to know html and make the page yourself.</p>
+            <p>They gifted me an immense respect for what technology can do (and also got me hooked on video games), and here I am all these years later striving to be a <strong>Computer Science Educator!</strong></p>
+        </div>
+        
+        <div class="gallery">
+            <h2>Cat Photos</h2>
+            <p>Now for a palate cleanser, enjoy some photos of my cats! Click to change the current picture!</p>
+            <img src="catPic1.jpg" alt="Cat Picture!" onclick="swapImage()">
+
+            <script>
+                function swapImage() {
+                    let img = document.getElementById("image");
+                    if (img.src.includes("catPic1.jpg")) {
+                        img.src = "catPic2.jpg";
+                    } 
+                    if (img.src.includes("catPic2.jpg")) {
+                        img.src = "catPic3.jpg";
+                    }
+                    else {
+                        img.src = "image1.jpg";
+                    }
+                }
+            </script>
+        </div>
+    </div>
 </body>
+</html>
