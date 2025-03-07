@@ -144,3 +144,11 @@ body {
     border: none;
     cursor: pointer;
 }
+
+/* Image Section */
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
