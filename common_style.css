@@ -1,0 +1,83 @@
+/* Navbar Styling */
+.custom-navbar {
+    background-color: #343a40;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.custom-navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.custom-navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Grey Section Styling */
+.custom-grey-section {
+    background-color: #f8f9fa;
+    padding: 50px;
+    text-align: center;
+}
+
+.custom-grey-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.custom-grey-section p {
+    font-size: 1.2em;
+    color: #6c757d;
+}
+
+.custom-grey-section .btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.custom-grey-section .btn:hover {
+    background-color: #0056b3;
+}
+
+/* White Section Container Styling */
+.custom-white-container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.custom-white-container h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.custom-white-container p {
+    color: #6c757d;
+    font-size: 1em;
+}
+
+.custom-white-container .btn {
+    background-color: #6c757d;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.custom-white-container .btn:hover {
+    background-color: #5a6268;
+}
