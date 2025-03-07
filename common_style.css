@@ -19,6 +19,10 @@ body {
     margin: auto;
 }
 
+.nav-container h2 {
+    color: white
+}
+
 .nav-links {
     list-style: none;
     display: flex;
