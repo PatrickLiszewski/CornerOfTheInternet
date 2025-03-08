@@ -36,6 +36,7 @@
             height: 700px;
             margin: 5px;
             border-radius: 10px;
+            cursor: pointer;
         }
         #Siena-Link {
             color: green;
@@ -53,7 +54,6 @@
         #Siena-Link:visited:hover {
             color: green; 
         }
-        
         
     </style>
 </head>
@@ -96,19 +96,19 @@
         <div class="gallery">
             <h2>Cat Photos</h2>
             <p>Now for a palate cleanser, enjoy some photos of my cats! Click to change the current picture!</p>
-            <img src="catPic1.jpg" alt="Cat Picture!" onclick="swapImage()">
+            <img src="catPic1.jpg" id="swap" alt="Cat Picture!" onclick="swapImage()">
 
             <script>
                 function swapImage() {
-                    let img = document.getElementById("image");
+                    let img = document.getElementById("swap");
                     if (img.src.includes("catPic1.jpg")) {
                         img.src = "catPic2.jpg";
                     } 
-                    if (img.src.includes("catPic2.jpg")) {
+                    else if (img.src.includes("catPic2.jpg")) {
                         img.src = "catPic3.jpg";
                     }
                     else {
-                        img.src = "image1.jpg";
+                        img.src = "catPic1.jpg";
                     }
                 }
             </script>
