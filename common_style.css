@@ -39,7 +39,7 @@ body {
     padding: 8px 12px;
 }
 
-.disabled {
+#disabled {
     color: grey;
     pointer-events: none;
 }
