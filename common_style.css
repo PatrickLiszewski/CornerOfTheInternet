@@ -9,10 +9,6 @@ body {
 .navbar {
     background-color: #343a40;
     padding: 15px;
-    display: flex;
-    justify-content: center;
-    width: 100%; 
-    box-sizing: border-box; 
 }
 
 .nav-container {
@@ -30,7 +26,7 @@ body {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 15px;
 }
 
 .nav-links li {
