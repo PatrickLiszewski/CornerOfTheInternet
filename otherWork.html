@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Homepage</title>
     <link rel="stylesheet" href="common_style.css">
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .panel{
+            width: 45%;
+            text-align: center;
+        }
+        .button-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .btn-toggle {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        #label {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -29,4 +58,20 @@
             </form>
         </div>
     </nav>
+    <h3 id="label">These are some of my other smaller projects, such as classwork or small tests. They're mostly small demonstrations of skills I have learned and not functional, complete ideas</h3>
+    <div class="container">
+        <div class="panel">
+            <div class="button-stack">
+                <a href="https://patrickliszewski.github.io/hello" class="btn-toggle">
+                    Hello!
+                </a>
+                <a href="https://patrickliszewski.github.io/letter" class="btn-toggle">
+                    Siena Letter
+                </a>
+                <a href="https://patrickliszewski.github.io/styling" class="btn-toggle">
+                    Styling
+                </a>
+            </div>
+        </div>
 </body>
+</html>
