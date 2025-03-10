@@ -6,6 +6,42 @@
     <title>Homepage</title>
     <link rel="stylesheet" href="common_style.css">
     <style>
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes text-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(-360deg); }
+        }
+
+        .blog-animation-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+
+        .blog-box {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            animation: spin 3s linear infinite;
+        }
+
+        .blog-box span {
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            animation: text-spin 3s linear infinite;
+        }
+
         .blog-container {
             display: flex;
             flex-direction: column;
@@ -14,6 +50,7 @@
             margin: auto;
             padding: 40px 20px;
         }
+
         .blog-item {
             display: flex;
             flex-direction: column;
@@ -22,19 +59,23 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
         }
+
         .blog-item h2 {
             margin-bottom: 10px;
             font-size: 1.8rem;
         }
+
         .blog-item p {
             color: #6c757d;
             margin-bottom: 20px;
         }
+
         .image-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
         }
+
         .image-grid img {
             width: 100%;
             border-radius: 10px;
@@ -64,6 +105,12 @@
             </form>
         </div>
     </nav>
+    <div class="blog-animation-container">
+        <div class="blog-box">
+            <span>Welcome to the Blog!</span>
+        </div>
+    </div>
+
     <div class="blog-container">
         <div class="blog-item">
             <h2>Some Of My Favorite Pokemon!</h2>
